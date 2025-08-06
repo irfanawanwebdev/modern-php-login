@@ -1,9 +1,9 @@
 <?php
 
-define('DB_HOST', 'localhost');
-define('DB_USER', 'database_user');
-define('DB_PASS', '');
-define('DB_NAME', 'database_name');
+$hostName = "your_host";
+$dbUser = "your_username";
+$dbPassword = "your_password";
+$dbName = "your_database";
 
 
 // Create Connection
@@ -15,5 +15,6 @@ $conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 if ($conn->connect_error) {
     die('Connection Failed ' . $conn->connect_error);
 }
+
 
 ?>
